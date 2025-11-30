@@ -81,22 +81,6 @@ def create_day(day: int) -> None:
     inputs_folder = PROJECT_ROOT / "inputs" / day_str
     inputs_folder.mkdir(parents=True, exist_ok=True)
     
-    # Create empty input.txt
-    input_file = inputs_folder / "input.txt"
-    if not input_file.exists():
-        input_file.write_text("")
-        print(f"Created {input_file}")
-    else:
-        print(f"Skipped {input_file} (already exists)")
-    
-    # Create empty test.txt
-    test_file = inputs_folder / "test.txt"
-    if not test_file.exists():
-        test_file.write_text("")
-        print(f"Created {test_file}")
-    else:
-        print(f"Skipped {test_file} (already exists)")
-    
     print(f"\nDay {day:02d} ready!")
 
 
