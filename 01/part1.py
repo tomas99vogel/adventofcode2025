@@ -6,7 +6,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import load_lines
 
 # True to use test.txt, False to use input.txt
-TEST = True
+TEST = False
 
 def main(data):
     position = 50
